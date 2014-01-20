@@ -6,7 +6,7 @@
 		<meta name="author" content="Josh Moody">
 		<meta charset="utf-8">
 		
-		<title>Josh Moody</title>
+		<title>Josh Moody :: {{ page.title }}</title>
 
 		<!-- Bootstrap -->
 		<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -62,10 +62,10 @@
 	
 	<script>
 	$(function() {
-		if (typeof(currentTab) != 'undefined')
-		{
-			$('#' + currentTab).addClass('active');
-		}
+			var currentTab = "{{page.tab}}";
+			if (currentTab.length > 0){
+				$('#' + currentTab + '-tab').addClass('active');
+			}
 	});
 	</script>
 	</body>
