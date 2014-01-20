@@ -1,1 +1,1 @@
-Website code for <joshmoody.com>
+#<http://joshmoody.com>
