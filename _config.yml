@@ -6,6 +6,4 @@ timezone: America/Chicago
 # Exclude metadata and development time dependencies (like node modules)
 exclude: [README.md, node_modules]
 include: [code,photography,assets,vendor]
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
