@@ -1,0 +1,141 @@
+/* Default Screen Breaks. */
+div.page {
+  background-color: #ffffff;
+  background-image: url(../images/redox_01.png);
+  margin-top: -20px;
+  margin-bottom: 10px;
+  padding: 0 30px 0 30px;
+}
+.tagline {
+  color: #ffffff;
+}
+.profile-photo {
+  background-image: url("../photos/moody-profile-small.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  margin-top: -40px;
+  padding: 0;
+  margin-left: -25px;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding-left: 140px;
+  }
+  .navbar-nav {
+    margin: 6px -15px;
+    padding-bottom: 50px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  div.page {
+    -webkit-box-shadow: 3px 3px 12px #000000;
+    -moz-box-shadow: 3px 3px 12px #000000;
+    box-shadow: 3px 3px 12px #000000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 40px;
+    border: 1px solid #000;
+  }
+  .profile-photo {
+    display: inline-block;
+    margin-top: -90px;
+    margin-left: -40px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/** Sprite generated at http://spritegen.website-performance.org/ */
+.social-links li {
+  margin: auto;
+  display: inline;
+}
+.social-icon-32,
+.social-icon,
+.social-icon-64 {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  width: 1em;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.social-icon-32 {
+  width: 32px;
+  height: 32px;
+}
+.social-icon-64 {
+  width: 64px;
+  height: 64px;
+}
+.icon-facebook {
+  background: url('../images/social-icons/32/Facebook.png');
+}
+.icon-flickr {
+  background: url('../images/social-icons/32/Flickr.png');
+}
+.icon-github {
+  background: url('../images/social-icons/32/Github.png');
+}
+.icon-linkedin {
+  background: url('../images/social-icons/32/Linkedin.png');
+}
+.icon-twitter {
+  background: url('../images/social-icons/32/Twitter.png');
+}
+#social-connect {
+  margin-top: 80px;
+}
+h1,
+h2,
+h3 {
+  font-family: Raleway, sans-serif;
+  /* 	font-family: 'Advent Pro', sans-serif; */
+}
+p,
+li {
+  font-family: 'Droid Sans', sans-serif;
+}
+body {
+  background-color: #3d3d3d;
+  background-image: url('../images/low_contrast_linen.png');
+}
+img.img-shadow {
+  -webkit-box-shadow: 2px 2px 10px #000000;
+  -moz-box-shadow: 2px 2px 10px #000000;
+  box-shadow: 2px 2px 10px #000000;
+}
+.code-intro {
+  border: 1px solid #dadada;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#gallery-links img {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

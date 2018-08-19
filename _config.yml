@@ -4,6 +4,6 @@ permalink: pretty
 timezone: America/Chicago
 
 # Exclude metadata and development time dependencies (like node modules)
-exclude: [README.md, node_modules]
-include: [code,photography,assets,vendor]
+exclude: [README.md, node_modules, 'assets/css/less']
+include: [assets,vendor]
 markdown: kramdown

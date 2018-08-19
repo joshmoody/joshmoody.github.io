@@ -5,7 +5,7 @@
 		<meta name="description" content="husband, father, son, software developer, mac addict">
 		<meta name="author" content="Josh Moody">
 		<meta charset="utf-8">
-		
+
 		<title>Josh Moody :: {{ page.title }}</title>
 
 		<!-- Bootstrap -->
@@ -19,7 +19,7 @@
 		<![endif]-->
 
 		<link href="//fonts.googleapis.com/css?family=Droid+Sans|Advent+Pro|Raleway" rel="stylesheet" type="text/css">
-		<link href="/assets/css/moody.css" rel="stylesheet"/>
+		<link href="/assets/css/site.css" rel="stylesheet"/>
 
 		<link rel="stylesheet" href="/vendor/blueimp/css/blueimp-gallery.min.css">
 
@@ -27,19 +27,23 @@
 	<body>
 
 	{% include sitenav.html %}
-	
+
+	<div class="container">
+	<p class="tagline pull-right hidden-xs">
+		<small>&raquo; husband, father, son, software developer, mac addict</small>
+	</p>
+	</div>
+
 	<div class="container page">
-		
-		<div class="row">
+
 		{{ content }}
 		</div> <!--//row-->
-
 
 		{% include social-connect.html %}
 
 	</div> <!--// page-->
-	
-	
+
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -52,14 +56,14 @@
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-811683-1']);
 	_gaq.push(['_trackPageview']);
-	
+
 	(function() {
 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 	</script>
-	
+
 	<script>
 	$(function() {
 			var currentTab = "{{page.tab}}";
