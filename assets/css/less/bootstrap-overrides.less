@@ -4,33 +4,31 @@
 @screen-md-min: 992px;
 @screen-lg-min: 1200px;
 
-div.page{
+div.page {
 	background-color: #ffffff;
-	background-image: url(../images/redox_01.png);
+	background-image: url("../images/redox_01.png");
 	margin-top: -20px;
 	margin-bottom: 10px;
-	padding: 0 30px 0 30px;
+	padding: 0 30px;
 }
 
 .tagline {
 	color: #ffffff;
 }
-
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: @screen-xs-max) {
 	.navbar-brand {
 		padding-left: 140px;
 	}
+
 	.navbar-nav {
-	    margin: 6px -15px;
-	    padding-bottom: 50px;
+		margin: 6px -15px;
+		padding-bottom: 50px;
 	}
 }
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
-
-	div.page{
+	div.page {
 		.shadow;
 		.rounded-corners;
 		margin-top: 20px;
@@ -39,14 +37,7 @@ div.page{
 		border: 1px solid #000;
 	}
 }
-
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-
-}
-
-
+@media (min-width: @screen-md-min) {}
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
-
-}
+@media (min-width: @screen-lg-min) {}
