@@ -1,9 +1,7 @@
 var gulp = require('gulp');
-var shell = require('gulp-shell');
 var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
 var exec = require('child_process').exec;
-var notify = require('gulp-notify');
 var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
@@ -30,31 +28,22 @@ var build = function(watch) {
      });
 };
 
-gulp.task('css', function() {
-	css();
-});
+var serve = function(){
+    browserSync.init({
+        port: 4000,
+        server: {
+            baseDir: '_site/'
+        },
+        reloadDebounce: 250
+    });
 
-gulp.task('build', function() {
-     build(false);
-});
+    build(true);
 
-// Task for serving blog with Browsersync
-gulp.task('serve', function() {
-     browserSync.init({
-          port: 4000,
-          server: {
-               baseDir: '_site/'
-          },
-          reloadDebounce: 250
-     });
+    // Reloads page when some of the already built files changed:
+    gulp.watch('_site/*.*').on('change', browserSync.reload);
 
-     build(true);
+    // Recompiles CSS if any LESS files change.
+    gulp.watch('assets/css/less/*.*').on('change', css);
+};
 
-     // Reloads page when some of the already built files changed:
-     gulp.watch('_site/*.*').on('change', browserSync.reload);
-
-	// Recompiles CSS if any LESS files change.
-	gulp.watch('assets/css/less/*.*').on('change', css);
-});
-
-gulp.task('default', ['css', 'serve']);
+gulp.task('default', gulp.series(css, serve));
